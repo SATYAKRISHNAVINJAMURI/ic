@@ -14,33 +14,33 @@ def main():
     print str(com.blockSize) + "-" + str(com.numberOfClusters) + "-" + str(com.s)
     com.minimumSupport = (com.s * com.rows) / 100.0
     com.numberOfBlocks = (com.rows * com.columns) / (com.blockSize * com.blockSize)
-    oTS = time.clock()
-    cTS = time.clock()
+    oTS = time.time()
+    cTS = time.time()
     com.runAllClusteringParallel()
-    cTE = time.clock()
+    cTE = time.time()
     print "Clustering done"
     clusteringTime = cTE - cTS
     com.runClusterEncodingParallel()
     print "Cluster Encoding Done"
-    mTS = time.clock()
-    com.miner()
-    mTE = time.clock()
+    mTS = time.time()
+    com.minerParallel()
+    mTE = time.time()
     print "Mining Done"
     mineTime = mTE - mTS
     com.huffEncodeParallel()
     print "Huffman Encoding Done"
-    coTS = time.clock()
+    coTS = time.time()
     com.Compressor()
-    coTE = time.clock()
+    coTE = time.time()
     print "Encoding Done"
     compressTime = coTE - coTS
-    oTE = time.clock()
+    oTE = time.time()
     totalCompressionTime = oTE - oTS
     print "Compression Done"
-    dTS = time.clock()
+    dTS = time.time()
     com.Decoder()
     com.runClusterDecodingInParallel()
-    dTE = time.clock()
+    dTE = time.time()
     decompressionTime = dTE - dTS
     print "Decompression Done"
     com.reconstruct(com.rows, com.columns, str(com.blockSize) + "-" + str(com.numberOfClusters) + "-" + str(com.s))

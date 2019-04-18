@@ -23,25 +23,25 @@ def main():
     com.runClusterEncodingParallel()
     print "Cluster Encoding Done"
     mTS = time.clock()
-    com.miner()
-    mTE = time.clock()
+    com.minerParallel()
+    mTE = time.time()
     print "Mining Done"
     mineTime = mTE - mTS
     com.huffEncodeParallel()
     print "Huffman Encoding Done"
-    coTS = time.clock()
+    coTS = time.time()
     com.Compressor()
-    coTE = time.clock()
+    coTE = time.time()
     print "Encoding Done"
     compressTime = coTE - coTS
-    oTE = time.clock()
+    oTE = time.time()
     totalCompressionTime = oTE - oTS
     print "Compression Done"
-    dTS = time.clock()
+    dTS = time.time()
     com.Decoder()
     print "Decoding Done"
     com.runClusterDecodingInParallel()
-    dTE = time.clock()
+    dTE = time.time()
     decompressionTime = dTE - dTS
     print "Decompression Done"
     com.reconstruct(com.rows, com.columns, str(com.blockSize) + "-" + str(com.numberOfClusters) + "-" + str(com.s))
