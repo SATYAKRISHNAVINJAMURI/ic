@@ -56,6 +56,9 @@ def imread(imageFile):
             redFile.write(str(image[i, j][0]) + " ")
             greenFile.write(str(image[i, j][1]) + " ")
             blueFile.write(str(image[i, j][2]) + " ")
+    redFile.close()
+    blueFile.close()
+    greenFile.close()
 
 
 # Return (rows,columns)
@@ -86,6 +89,7 @@ def clustering(i,string,y):
             redClusterTable.write(str(k))
             redClusterTable.write(" "+str(identifier)+"\n");
             k = k+1
+        redClusterTable.close()
     idx,_ = vq(z[0],centroids)
     c = 1
     a = list()
@@ -96,6 +100,7 @@ def clustering(i,string,y):
         if(c==blockSize+1):
             redCluster.write("\n")
             c = 1;
+    redCluster.close()
 
 def runParallelClustering(string):
     red = []
@@ -103,6 +108,7 @@ def runParallelClustering(string):
         y = redFile.read()
         for m in y.split():
             red.append(int(m))
+        redFile.close()
     redarray  = np.asarray(red);
     redarray = redarray.reshape(rows,columns)
     y = blockshaped(redarray, blockSize, blockSize)
@@ -131,6 +137,7 @@ def clusterEncoding(string):
             k = []
             for m in i.split():
                 k.append(int(m))
+            s.close()
         k = np.asarray(k)
         k = k.reshape(blockSize,blockSize)
         final.append(k)
@@ -141,6 +148,7 @@ def clusterEncoding(string):
             for m in p[i]:
                 w.write(str(m)+" ")
             w.write("\n")
+        w.close()
 
 def runClusterEncodingParallel():
     proc = []
@@ -157,6 +165,7 @@ def miner(string):
         for line in r:
             line = line.replace("\n","")
             redFile.append(" "+line+" ")
+        r.close()
     # print redFile
     #Find all one length sequences
     frequentPatterns = {}
@@ -256,6 +265,7 @@ def miner(string):
         if(allFrequentPatterns[eachKey]!=0):
             finalKeys.write(eachKey.lstrip().rstrip()+"-"+str(allFrequentPatterns[eachKey])+"\n")
             finalLength = finalLength + (len(eachKey.lstrip().rstrip().split(" "))*allFrequentPatterns[eachKey])
+    finalKeys.close()
 
 
 def minerParallel():
@@ -278,6 +288,7 @@ def huffman_codes(s):
         for line in s:
             x = line.replace("\n",'').rstrip().split('-')
             table.append(Node([[x[0], '']], int(x[1])))
+        s.close()
     heapq.heapify(table)
     while len(table) > 1:
         first_node = heapq.heappop(table)
@@ -291,6 +302,7 @@ def huffEncode(string):           # changes made
     x = huffman_codes(string + "Patterns.txt")
     for i in x.keys():
         s.write(i + "-" + x[i] + "\n")
+    s.close()
 
 
 
@@ -310,6 +322,7 @@ def huffmanEncoder(string):
         for line in ct:
             (pattern, code) = line.replace("\n","").split("-")
             codetable[pattern] = code
+        ct.close()
 
     codeTableItems = codetable.items()
     sortedCodeTable = sorted(codeTableItems,key = lambda s: len(s[0]))
@@ -351,10 +364,20 @@ def huffmanEncoder(string):
             
             currentLine = currentLine.replace(" ","").replace("-","")
             redEncoding.write(currentLine+"\n")
+        rc.close()
+    redEncoding.close()
 
 def Compressor():
-    for string in ['red','green','blue']:
-        huffmanEncoder(string)
+    proc = []
+    for string in ["red", "green", "blue"]:
+        p = Process(target=huffmanEncoder, args=(string,))
+        p.start()
+        proc.append(p)
+
+    for p in proc:
+        p.join()
+
+
 
 def huffmanDecoder(string):
     codeTable = {}
@@ -362,6 +385,7 @@ def huffmanDecoder(string):
         for line in ct:
             (pattern, code) = line.replace("\n","").split("-")
             codeTable[code] = pattern
+    ct.close()
 
     redDecomp = open(string+"HuffmanDecoded.txt","w")
     with open(string+"Compressed.txt","r") as rc:
@@ -387,6 +411,8 @@ def huffmanDecoder(string):
             redDecomp.write(currentLine.rstrip().lstrip()+"\n")
             # print currentLine
             # break
+        rc.close()
+    redDecomp.close()
 
 def Decoder():     # changes made.
     proc = []
@@ -408,6 +434,7 @@ def clusterDecoding(string):
         m = s.read()
         for ch in m.split():
             final.append(int(ch))
+        s.close()
     final  = np.asarray(final);
     final = final.reshape(rows,columns)
     y = blockshaped(final, blockSize, blockSize) 
@@ -418,6 +445,7 @@ def clusterDecoding(string):
             for line in s:
                 mat = line.strip().split(" ")
                 val[i][int(mat[0])] = float(mat[1])
+            s.close()
     newFinal = []
     for i in range(0,numberOfBlocks):
         newY = y[i].reshape(1,blockSize*blockSize)
@@ -434,6 +462,7 @@ def clusterDecoding(string):
             for m in shapedNewFinal[i]:
                 w.write(str(m)+" ")
             w.write("\n")
+        w.close()
 
 def runClusterDecodingInParallel():
     proc = []
@@ -459,6 +488,7 @@ def reconstruct(rows, columns, fileName):
                 j = j+1;
             i = i+1
             d.write("\n")
+        d.close()
 
 
 
@@ -473,6 +503,7 @@ def reconstruct(rows, columns, fileName):
                 j = j+1;
             d.write("\n")
             i = i+1
+        d.close()
 
 
 
@@ -488,6 +519,7 @@ def reconstruct(rows, columns, fileName):
                 j = j+1;
             i = i+1
             d.write("\n")
+        d.close()
     img = Image.fromarray(data)
     img.save(fileName+'.bmp')
 

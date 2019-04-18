@@ -1,4 +1,4 @@
-import compression as com
+import new_compression as com
 import time
 import numpy as np
 import os

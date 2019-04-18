@@ -374,7 +374,7 @@ def huffmanEncoder(string):
                         # redEncoding.write("ues "+currentLine+"\n")
                         # print currentLprint currentLineine
 
-            currentLine = currentLine.replace(" ", "").replace("-", "")
+            currentLine = currentLine.replace(" ", "").replace("-", " ").replace("\n", " ").replace("  "," ").rstrip().lstrip()
             redEncoding.write(currentLine + "\n")
         rc.close()
     redEncoding.close()
@@ -397,32 +397,20 @@ def huffmanDecoder(string):
         for line in ct:
             (pattern, code) = line.replace("\n", "").split("-")
             codeTable[code] = pattern
-    ct.close()
+        ct.close()
 
     redDecomp = open(string + "HuffmanDecoded.txt", "w")
     with open(string + "Compressed.txt", "r") as rc:
+        count = 0
         for line in rc:
+            count += 1
             # print line
+            line.replace('\n', '')
             currentLine = ""
-            cString = ""
-            count = 0
-            for i in line:
-                # print i
-                cString = cString + i
-                count = 0
-                for key in codeTable.keys():
-                    if (cString == key):
-                        count = 1
-                        break
-                if (count == 1):
-                    # redDecomp.write(cString+"---"+codeTable[cString]+"\n")
-                    # currentLine = currentLine.replace(cString,"-"+codeTable[cString]+"-")
-                    currentLine = currentLine + " " + codeTable[cString]
-                    # redDecomp.write(currentLine+"\n")
-                    cString = ""
+            codes = line.split();
+            for code in codes:
+                currentLine = currentLine + " " + codeTable[code]
             redDecomp.write(currentLine.rstrip().lstrip() + "\n")
-            # print currentLine
-            # break
         rc.close()
     redDecomp.close()
 

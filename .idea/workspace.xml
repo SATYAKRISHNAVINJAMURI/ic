@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="313807cf-7701-43fa-a8ea-4ff99ba0715d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Lenna/new_compression.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lenna/tem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lenna/23-10.tiff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lenna/32-8-10.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/Lenna/32-8-10.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lenna/32-8-22.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/Lenna/32-8-22.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lenna/compression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lenna/compression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lenna/max_compression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lenna/max_compression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lenna/max_single_run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lenna/par_single_results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Lenna/par_single_results.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lenna/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Lenna/results.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lenna/single_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lenna/single_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lenna/unpar_compression.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lenna/unpar_max_compression.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="single_run.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lenna/single_run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="74">
+              <caret line="20" column="27" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="32-8-10.bmp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lenna/32-8-10.bmp">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="max_compression.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lenna/max_compression.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="239" column="55" selection-start-line="239" selection-start-column="55" selection-end-line="239" selection-end-column="55" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_compression.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lenna/new_compression.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="240" column="20" selection-start-line="240" selection-start-column="20" selection-end-line="240" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delete.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lenna/delete.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tem.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lenna/testing/tem.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="11" column="53" selection-start-line="3" selection-end-line="47" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="compression.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lenna/compression.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1206">
+              <caret line="583" column="75" lean-forward="true" selection-start-line="583" selection-start-column="75" selection-end-line="583" selection-end-column="75" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Image</find>
+      <find>rows</find>
+      <find>getImageSize</find>
+      <find>global</find>
+      <find>process</find>
+      <find>huffEncoding</find>
+      <find>runClusterDecodingInParallel</find>
+      <find>Decoder</find>
+      <find>time</find>
+      <find>pro</find>
+      <find>huffEncode</find>
+      <find>decompressionTime</find>
+      <find>miner(</find>
+      <find>miner()</find>
+      <find>miner</find>
+      <find>minerParallel()</find>
+      <find>clock()</find>
+      <find>compressed</find>
+      <find>100010110001</find>
+      <find>01110000010101</find>
+      <find>00001110010</find>
+      <find>00001111</find>
+      <find>00001111</find>
+      <find>max</find>
+      <find>com</find>
+      <find>non</find>
+      <find>Decode</find>
+      <find>Encoding</find>
+      <find>open</find>
+      <find>closed</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>time()</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Lenna/latest.py" />
+        <option value="$PROJECT_DIR$/Lenna/max_single_run.py" />
+        <option value="$PROJECT_DIR$/Lenna/unpar_compression.py" />
+        <option value="$PROJECT_DIR$/Lenna/unpar_max_compression.py" />
+        <option value="$PROJECT_DIR$/Lenna/tem.py" />
+        <option value="$PROJECT_DIR$/Lenna/redHuffmanDecoded.txt" />
+        <option value="$PROJECT_DIR$/Lenna/testing/redtemCompressed.txt" />
+        <option value="$PROJECT_DIR$/Lenna/testing/redtemHuffmanDecoded.txt" />
+        <option value="$PROJECT_DIR$/Lenna/testing/tem.py" />
+        <option value="$PROJECT_DIR$/Lenna/compression.py" />
+        <option value="$PROJECT_DIR$/Lenna/max_compression.py" />
+        <option value="$PROJECT_DIR$/Lenna/single_run.py" />
+        <option value="$PROJECT_DIR$/Lenna/new_compression.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="39" />
+    <option name="y" value="189" />
+    <option name="width" value="1259" />
+    <option name="height" value="519" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ic" type="462c0819:PsiDirectoryNode" />
+              <item name="Lenna" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ic" type="462c0819:PsiDirectoryNode" />
+              <item name="Lenna" type="462c0819:PsiDirectoryNode" />
+              <item name="testing" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.single_run">
+    <configuration name="compression" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lenna" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lenna/compression.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="delete" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lenna" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lenna/delete.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="new_compression" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lenna" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lenna/new_compression.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="single_run" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lenna" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lenna/single_run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="tem (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lenna/testing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lenna/testing/tem.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.delete" />
+      <item itemvalue="Python.tem (1)" />
+      <item itemvalue="Python.new_compression" />
+      <item itemvalue="Python.compression" />
+      <item itemvalue="Python.single_run" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.single_run" />
+        <item itemvalue="Python.delete" />
+        <item itemvalue="Python.new_compression" />
+        <item itemvalue="Python.compression" />
+        <item itemvalue="Python.tem (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="313807cf-7701-43fa-a8ea-4ff99ba0715d" name="Default" comment="" />
+      <created>1554119871868</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554119871868</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="25" width="1366" height="694" extended-state="6" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Python Console" order="8" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.52568495" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16251831" />
+      <window_info anchor="right" id="R Packages" order="4" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32876712" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Lenna/single_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/compression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3555">
+          <caret line="237" column="27" selection-start-line="237" selection-start-column="27" selection-end-line="237" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/unpar_compression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9585">
+          <caret line="639" column="23" selection-start-line="639" selection-start-column="23" selection-end-line="639" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/unpar_max_compression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6855">
+          <caret line="457" column="25" selection-start-line="457" selection-start-column="25" selection-end-line="457" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/max_compression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7395">
+          <caret line="493" column="114" selection-start-line="165" selection-end-line="493" selection-end-column="114" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/single_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/compression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3555">
+          <caret line="237" column="27" lean-forward="true" selection-start-line="237" selection-start-column="27" selection-end-line="237" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/unpar_compression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10335">
+          <caret line="689" column="44" lean-forward="true" selection-start-line="689" selection-start-column="44" selection-end-line="689" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/unpar_max_compression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6855">
+          <caret line="457" column="25" lean-forward="true" selection-start-line="457" selection-start-column="25" selection-end-line="457" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/max_compression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7395">
+          <caret line="493" column="114" selection-start-line="165" selection-end-line="493" selection-end-column="114" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/single_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/compression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="32" lean-forward="true" selection-end-line="787" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/unpar_compression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10155">
+          <caret line="677" column="14" lean-forward="true" selection-end-line="756" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/max_compression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7245">
+          <caret line="493" column="114" lean-forward="true" selection-start-line="165" selection-end-line="493" selection-end-column="114" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/unpar_max_compression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5670">
+          <caret line="378" lean-forward="true" selection-start-line="378" selection-end-line="378" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/single_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/compression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8805">
+          <caret line="587" column="37" selection-start-line="587" selection-start-column="37" selection-end-line="587" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/single_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/compression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8655">
+          <caret line="587" column="37" selection-start-line="587" selection-start-column="37" selection-end-line="587" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/single_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/compression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8805">
+          <caret line="587" column="37" lean-forward="true" selection-start-line="587" selection-start-column="37" selection-end-line="587" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/single_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/compression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10395">
+          <caret line="693" column="15" selection-start-line="693" selection-start-column="10" selection-end-line="693" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/greenFile.txt" />
+    <entry file="file://$PROJECT_DIR$/Lenna/blueFile.txt" />
+    <entry file="file://$PROJECT_DIR$/Lenna/latest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-511">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/greenCompressed.txt" />
+    <entry file="file://$PROJECT_DIR$/Lenna/greenCodetable.txt" />
+    <entry file="file://$PROJECT_DIR$/Lenna/32-8-10max.bmp">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/32-8-22.bmp">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/24-94.tiff">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/single_results.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/unpar_compression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7515">
+          <caret line="507" selection-start-line="507" selection-end-line="507" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/unpar_max_compression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7650">
+          <caret line="520" selection-start-line="520" selection-end-line="520" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/redCompressed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1239" selection-start-column="1239" selection-end-column="1239" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/redClusterEncoded.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/redCodetable.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="2722" column="20" lean-forward="true" selection-start-line="2722" selection-start-column="20" selection-end-line="2722" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/tem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="42" column="86" selection-start-line="42" selection-start-column="86" selection-end-line="42" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/redtemCompressed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1449" selection-start-column="1449" selection-end-column="1463" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/testing/redtemCompressed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="497" column="1534" selection-start-line="497" selection-start-column="1534" selection-end-line="497" selection-end-column="1534" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/redHuffmanDecoded.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/testing/redtemHuffmanDecoded.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4455">
+          <caret line="297" column="991" selection-start-line="297" selection-start-column="991" selection-end-line="297" selection-end-column="991" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/max_single_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/max_compression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="239" column="55" selection-start-line="239" selection-start-column="55" selection-end-line="239" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/testing/tem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="53" selection-start-line="3" selection-end-line="47" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/delete.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/23-34.tiff">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/compression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1206">
+          <caret line="583" column="75" lean-forward="true" selection-start-line="583" selection-start-column="75" selection-end-line="583" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/new_compression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="240" column="20" selection-start-line="240" selection-start-column="20" selection-end-line="240" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/single_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lenna/32-8-10.bmp">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+  </component>
+</project>
