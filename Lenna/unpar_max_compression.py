@@ -499,21 +499,18 @@ def huffman_codes(s):
     return dict(table[0].pairs)
 
 
-def huffEncode():
-    s = open("redCodetable.txt", "w")
-    x = huffman_codes("redPatterns.txt")
+def huffEncode(string):           # changes made
+    s = open(string + "Codetable.txt", "w")
+    x = huffman_codes(string + "Patterns.txt")
     for i in x.keys():
         s.write(i + "-" + x[i] + "\n")
 
-    s = open("greenCodetable.txt", "w")
-    x = huffman_codes("greenPatterns.txt")
-    for i in x.keys():
-        s.write(i + "-" + x[i] + "\n")
 
-    s = open("blueCodetable.txt", "w")
-    x = huffman_codes("bluePatterns.txt")
-    for i in x.keys():
-        s.write(i + "-" + x[i] + "\n")
+
+def huffEncodeParallel():          # changes made
+    for string in ["red", "green", "blue"]:
+        huffEncode(string)
+
 
 
 def huffmanEncoder(string):
