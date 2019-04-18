@@ -27,7 +27,7 @@ def main():
     mTE = time.clock()
     print "Mining Done"
     mineTime = mTE - mTS
-    com.huffEncode()
+    com.huffEncodeParallel()
     print "Huffman Encoding Done"
     coTS = time.clock()
     com.Compressor()

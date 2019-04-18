@@ -511,21 +511,23 @@ def huffman_codes(s):
     return dict(table[0].pairs)
 
 
-def huffEncode():
-    s = open("redCodetable.txt", "w")
-    x = huffman_codes("redPatterns.txt")
+def huffEncode(string):           # changes made
+    s = open(string + "Codetable.txt", "w")
+    x = huffman_codes(string + "Patterns.txt")
     for i in x.keys():
         s.write(i + "-" + x[i] + "\n")
 
-    s = open("greenCodetable.txt", "w")
-    x = huffman_codes("greenPatterns.txt")
-    for i in x.keys():
-        s.write(i + "-" + x[i] + "\n")
 
-    s = open("blueCodetable.txt", "w")
-    x = huffman_codes("bluePatterns.txt")
-    for i in x.keys():
-        s.write(i + "-" + x[i] + "\n")
+
+def huffEncodeParallel():          # changes made
+    proc = []
+    for string in ["red", "green", "blue"]:
+        p = Process(target=huffEncode, args=(string,))
+        p.start()
+        proc.append(p)
+    for p in proc:
+        p.join()
+
 
 
 def huffmanEncoder(string):
@@ -614,9 +616,18 @@ def huffmanDecoder(string):
             # break
 
 
-def Decoder():
-    for string in ['red', 'green', 'blue']:
-        huffmanDecoder(string)
+def Decoder():     # changes made.
+    proc = []
+    for string in ["red","green","blue"]:
+        p = Process(target=huffmanDecoder, args=(string,))
+        p.start()
+        proc.append(p)
+    for p in proc:
+        p.join()
+
+
+    # for string in ['red','green','blue']:
+    #     huffmanDecoder(string)
 
 
 def clusterDecoding(string):
@@ -734,7 +745,7 @@ def main():
                 mTE = time.clock()
                 print "Mining Done"
                 mineTime = mTE - mTS
-                huffEncode()
+                huffEncodeParallel()
                 print "Huffman Encoding Done"
                 coTS = time.clock()
                 Compressor()
