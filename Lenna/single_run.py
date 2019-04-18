@@ -14,15 +14,15 @@ def main():
     print str(com.blockSize) + "-" + str(com.numberOfClusters) + "-" + str(com.s)
     com.minimumSupport = (com.s * com.rows) / 100.0
     com.numberOfBlocks = (com.rows * com.columns) / (com.blockSize * com.blockSize)
-    oTS = time.clock()
-    cTS = time.clock()
+    oTS = time.time()
+    cTS = time.time()
     com.runAllClusteringParallel()
-    cTE = time.clock()
+    cTE = time.time()
     print "Clustering done"
     clusteringTime = cTE - cTS
     com.runClusterEncodingParallel()
     print "Cluster Encoding Done"
-    mTS = time.clock()
+    mTS = time.time()
     com.minerParallel()
     mTE = time.time()
     print "Mining Done"
