@@ -238,7 +238,7 @@ def miner(string):
         # Pop all non closed sequences
         for key1 in frequentPatterns[i].keys():
             for key2 in frequentPatterns[i - 1].keys():
-                if (key2 in key1):
+                if ((key2 in key1) and (frequentPatterns[i][key1] == frequentPatterns[i-1][key2])):
                     frequentPatterns[i - 1].pop(key2, None)
 
     allKeys = []
