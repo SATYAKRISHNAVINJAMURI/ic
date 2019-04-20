@@ -247,7 +247,7 @@ def miner(string):
                 # print key
                 key = " "+key+" "
                 if(key in line):
-                    allFrequentPatterns[key.lstrip().rstrip()] = allFrequentPatterns[key.lstrip().rstrip()] + line.count(key)
+                    allFrequentPatterns[key.lstrip().rstrip()] += line.count(key)
                     while(key in line):
                         line = line.replace(key,' ')
                     # print line
@@ -255,7 +255,7 @@ def miner(string):
                 key = " "+key+" "
                 if(key in line):
                     # key = key.lstrip().rstrip()
-                    allFrequentPatterns[key.lstrip().rstrip()] = allFrequentPatterns[key.lstrip().rstrip()] + line.count(key)
+                    allFrequentPatterns[key.lstrip().rstrip()] += line.count(key)
                     while(key in line):
                         line = line.replace(key,' ')
         # print line

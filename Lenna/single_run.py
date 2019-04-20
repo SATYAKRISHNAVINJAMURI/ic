@@ -5,7 +5,7 @@ import os
 np.set_printoptions(threshold= 0.1)
 
 def main():
-    res = open("par_single_results.csv", "w")
+    res = open("../results/par_single_results.csv", "w")
     res.write(
         "BlockSize,k,Alpha,ClusteringTime,MiningTime,EncodingTime,CompressionTime,DecompressionTime,ClusterTableSize,CodeTableSize,EncodedImageSize,CompressedSize,ActualSize,JPEG Size,GIF Size,JPEG Cr,GIF Cr,Our Cr,CRP Actual,CRP JPEG,CRP GIF\n")
     # res = open("s_results.csv", "a")
