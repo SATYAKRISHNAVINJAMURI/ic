@@ -1,7 +1,8 @@
 def miner(numberOfClusters, columns, minimumSupport):
     string = "green"
     redFile = []
-    with open(string+"ClusterEncoded.txt", "r") as r:
+    # with open(string+"ClusterEncoded.txt", "r") as r:
+    with open(string + "ClusterEncoded.txt", "r") as r:
         for line in r:
             line = line.replace("\n","")
             redFile.append(" "+line+" ")
@@ -59,7 +60,7 @@ def miner(numberOfClusters, columns, minimumSupport):
 
         #Pop all sequences that don't satisfy the minimum support threshold
         for key in frequentPatterns[i].keys():
-            if(frequentPatterns[i][key]<minimumSupport):
+            if(frequentPatterns[i][key] < minimumSupport):
                 frequentPatterns[i].pop(key, None)
 
         #Pop all non closed sequences
@@ -96,9 +97,12 @@ def miner(numberOfClusters, columns, minimumSupport):
         if(allFrequentPatterns[eachKey]!=0):
             finalKeys.write(eachKey.lstrip().rstrip()+"-"+str(allFrequentPatterns[eachKey])+"\n")
             finalLength = finalLength + (len(eachKey.lstrip().rstrip().split(" "))*allFrequentPatterns[eachKey])
-    print finalLength
     finalKeys.close()
 
 
+
+    # print allFrequentPatterns
+
+
 if __name__ == "__main__":
-    miner(8,32,51.2)
+    miner(8,512,52)

@@ -1,0 +1,2 @@
+BlockSize,k,Alpha,ClusteringTime,MiningTime,EncodingTime,CompressionTime,DecompressionTime,ClusterTableSize,CodeTableSize,EncodedImageSize,CompressedSize,ActualSize,JPEG Size,GIF Size,JPEG Cr,GIF Cr,Our Cr,CRP Actual,CRP JPEG,CRP GIF
+32,8,10,10.895137,21.842449,4.899488,38.498075,224.697295,9.216,34.7055,257.677,301.5985,786.6,404,226,1.94702970297,3.48053097345,2.60810315701,61.6579583016,25.3469059406,-33.4506637168
