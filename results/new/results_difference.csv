@@ -1,0 +1,49 @@
+seq_cfsm,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,BlockSize,k,Alpha,ClusteringTime,MiningTime,EncodingTime,CompressionTime,DecompressionTime,ClusterTableSize,CodeTableSize,EncodedImageSize,CompressedSize,ActualSize,JPEG Size,GIF Size,JPEG Cr,GIF Cr,Our Cr,CRP Actual,CRP JPEG,CRP GIF,PSNR,MSE,NormalisedCrossRelation,MaxDiff,AvgDiff,NormalisedAbsoluteError,StructuralContent
+,32,8,10,10.6150591373,21.2202401161,4.8409588337,37.4915630817,228.276431084,9.216,34.5728333333,257.696,301.484833333,786.6,404,226,1.947029703,3.4805309735,2.6090864715,61.6724086787,25.3750412541,-33.4003687316,36.8068551157,1639,2.30733058328183E-05,12,0.5032552083,0.0041058203,1.0062553965
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+seq_max,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,BlockSize,k,Alpha,ClusteringTime,MiningTime,EncodingTime,CompressionTime,DecompressionTime,ClusterTableSize,CodeTableSize,EncodedImageSize,CompressedSize,ActualSize,JPEG Size,GIF Size,JPEG Cr,GIF Cr,Our Cr,CRP Actual,CRP JPEG,CRP GIF,PSNR,MSE,NormalisedCrossRelation,MaxDiff,AvgDiff,NormalisedAbsoluteError,StructuralContent
+,32,8,10,10.9100470543,20.70210886,2.869040966,35.2799091339,90.7486889362,9.216,15.2386666667,286.218,310.672666667,786.6,404,226,1.947029703,3.4805309735,2.5319253491,60.5043647767,23.1008250825,-37.4657817109,37.110377951,1590,2.55507759287095E-05,12,0.5572916667,0.0040240692,1.0068614128
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+par_cfsm,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,BlockSize,k,Alpha,ClusteringTime,MiningTime,EncodingTime,CompressionTime,DecompressionTime,ClusterTableSize,CodeTableSize,EncodedImageSize,CompressedSize,ActualSize,JPEG Size,GIF Size,JPEG Cr,GIF Cr,Our Cr,CRP Actual,CRP JPEG,CRP GIF,PSNR,MSE,NormalisedCrossRelation,MaxDiff,AvgDiff,NormalisedAbsoluteError,StructuralContent
+,32,8,10,6.7619819641,9.4462721348,2.3067569733,18.9734401703,124.055628061,9.216,34.3781666667,256.675,300.269166667,786.6,404,226,1.947029703,3.4805309735,2.6196495922,61.8269556742,25.6759488449,-32.8624631268,37.0581039167,1598.3333333333,0.000021163,12,0.4615885417,0.0040988383,1.0056218246
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+par_max,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,BlockSize,k,Alpha,ClusteringTime,MiningTime,EncodingTime,CompressionTime,DecompressionTime,ClusterTableSize,CodeTableSize,EncodedImageSize,CompressedSize,ActualSize,JPEG Size,GIF Size,JPEG Cr,GIF Cr,Our Cr,CRP Actual,CRP JPEG,CRP GIF,PSNR,MSE,NormalisedCrossRelation,MaxDiff,AvgDiff,NormalisedAbsoluteError,StructuralContent
+,32,8,10,6.5670809746,8.9424290657,1.378041029,17.3597648144,48.8160779476,9.216,15.3275,244.957,269.5005,786.6,404,226,1.947029703,3.4805309735,2.9187329894,65.7385583524,33.2919554455,-19.2480088496,36.9275726942,1619.3333333333,2.19091933781224E-05,12,0.4778645833,0.0040938893,1.0057726846
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+new_cfsm,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,BlockSize,k,Alpha,ClusteringTime,MiningTime,EncodingTime,CompressionTime,DecompressionTime,ClusterTableSize,CodeTableSize,EncodedImageSize,CompressedSize,ActualSize,JPEG Size,GIF Size,JPEG Cr,GIF Cr,Our Cr,CRP Actual,CRP JPEG,CRP GIF,PSNR,MSE,NormalisedCrossRelation,MaxDiff,AvgDiff,NormalisedAbsoluteError,StructuralContent
+,32,8,10,6.8844652176,11.4212830067,2.2960679531,21.4224581718,0.6709671021,9.216,34.462,282.321,325.999,786.6,404,226,1.947029703,3.4805309735,2.4128908371,58.5559369438,19.3071782178,-44.2473451327,36.8537413498,1631.3333333333,2.2028589527322E-05,12,0.48046875,0.0034693494,1.0060254774
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+new_max,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,BlockSize,k,Alpha,ClusteringTime,MiningTime,EncodingTime,CompressionTime,DecompressionTime,ClusterTableSize,CodeTableSize,EncodedImageSize,CompressedSize,ActualSize,JPEG Size,GIF Size,JPEG Cr,GIF Cr,Our Cr,CRP Actual,CRP JPEG,CRP GIF,PSNR,MSE,NormalisedCrossRelation,MaxDiff,AvgDiff,NormalisedAbsoluteError,StructuralContent
+,32,8,10,6.0380010605,11.3357689381,1.4882631302,19.2730150223,0.6911258698,9.216,15.5406666667,286.118,310.874666667,786.6,404,226,1.947029703,3.4805309735,2.5302801558,60.4786846343,23.0508250825,-37.5551622419,37.4798018318,1532.3333333333,2.14017597440242E-05,12,0.466796875,0.0033706281,1.0057032719
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+prefix_max,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,BlockSize,k,Alpha,ClusteringTime,MiningTime,EncodingTime,CompressionTime,DecompressionTime,ClusterTableSize,CodeTableSize,EncodedImageSize,CompressedSize,ActualSize,JPEG Size,GIF Size,JPEG Cr,GIF Cr,Our Cr,CRP Actual,CRP JPEG,CRP GIF,PSNR,MSE,NormalisedCrossRelation,MaxDiff,AvgDiff,NormalisedAbsoluteError,StructuralContent
+,32,8,10,6.6145601273,4.444824934,2.402285099,14.6068820953,0.7141110897,9.216,34.5796666667,280.952,324.747666667,786.6,404,226,1.947029703,3.4805309735,2.4221883042,58.7150182219,19.6169141914,-43.6936578171,36.339991112,1717.3333333333,2.41777202129144E-05,12,0.52734375,0.0038078225,1.0064208377
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+other algorithm comparison,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,file_size,PNG_Cr,png_compressed_file size,,K-fold png_cr,K-foldpng_cr,,,,,,,,,,,,,,,,,,,,,,
+lenna image,768kb,1.7,465kb,,232kb,3.3,,,,,,,,,,,,,,,,,,,,,,
+baboon image,768kb,1.3,613kb,,381kb,2,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,d,,,,,,,,,,,,,,,,,,,,,,,,

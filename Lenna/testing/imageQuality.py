@@ -1,4 +1,5 @@
 import numpy as np
+import cv2
 
 
 def mean_square_error(im1,im2):
@@ -9,7 +10,7 @@ def mean_square_error(im1,im2):
     return res
 
 def PSNR(im1,im2):
-    return 10 * np.log((255 * 255)/mean_square_error(im1 - im2))
+    return 10 * np.log((255 * 255)/mean_square_error(im1, im2))
 
 def normalised_cross_relation(im1,im2):
     (M, N) = im1.shape
@@ -84,25 +85,27 @@ def normalised_absolute_error(im1,im2):
 
 
 if __name__ == "__main__":
-    im1 = np.zeros((3,3))
-    im2 = np.zeros((3,3))
-
     # l1 = [[1,2,3],[2,3,4],[3,4,5]]
     # l2 = [[3,4,5],[5,6,7],[4,5,6]]
-    l1 = [[1,3,5],[78,76,79],[89,34,848]]
-    l2 = [[3,65,98],[5,63,7],[4,5,43]]
+    # l1 = [[1,3,5],[78,76,79],[89,34,848]]
+    # l2 = [[3,65,98],[5,63,7],[4,5,43]]
+    # for i in range(0,3):
+    #     for j in range(0,3):
+    #         im1[i,j] = l1[i][j]
+    #
+    # for i in range(0,3):
+    #     for j in range(0,3):
+    #         im2[i,j] = l2[i][j]
+
+
+    input = cv2.imread("4.2.02.tiff")
+    output = cv2.imread("32-8-10.bmp")
+    input = input.astype(float)
+    output = output.astype(float)
+    res = 0
     for i in range(0,3):
-        for j in range(0,3):
-            im1[i,j] = l1[i][j]
+        res += normalised_absolute_error(input[:,:,i],output[:,:,i])
 
-    for i in range(0,3):
-        for j in range(0,3):
-            im2[i,j] = l2[i][j]
-
-
-    print mean_square_error(im1,im2)
-    print normalised_cross_relation(im1,im2)
-    print average_difference(im1,im2)
-    print maximal_difference(im1,im2)
-    print laplace_mean_squar_error(im1,im2)
+    res /= 3
+    print res
 

@@ -10,6 +10,8 @@ from PIL import Image
 from multiprocessing import Process
 import numpy as np
 np.set_printoptions(threshold= 0.1)
+import cv2
+import imageQuality as iq
 
 def nob(n):
     return int(math.log(n, 2)) + 1
@@ -530,17 +532,18 @@ def reconstruct(rows, columns, fileName):
 
 
 def main():
-    res = open("results.csv", "w")
+    res = open("results.csv", "a")
     res.write(
-        "BlockSize,k,Alpha,ClusteringTime,MiningTime,EncodingTime,CompressionTime,DecompressionTime,ClusterTableSize,CodeTableSize,EncodedImageSize,CompressedSize,ActualSize,JPEG Size,GIF Size,JPEG Cr,GIF Cr,Our Cr,CRP Actual,CRP JPEG,CRP GIF\n")
-    res.close()
+        "BlockSize,k,Alpha,ClusteringTime,MiningTime,EncodingTime,CompressionTime,DecompressionTime,ClusterTableSize,CodeTableSize,EncodedImageSize,CompressedSize,ActualSize,JPEG Size,GIF Size,JPEG Cr,GIF Cr,Our Cr,CRP Actual,CRP JPEG,CRP GIF,PSNR,MSE,NormalisedCrossRelation,MaxDiff,AvgDiff,NormalisedAbsoluteError,StructuralContent\n")
     global blockSize, numberOfClusters, s, rows, columns,numberOfBlocks, minimumSupport
     for blockSize in doubling_range(32, 257):
-        for numberOfClusters in range(8, 33, 4):
-            for s in range(10, 100, 12):
-                res = open("results.csv", "a")
-                image = imread("4.2.02.tiff")
-                (rows, columns) = getImageSize("4.2.02.tiff")
+        for numberOfClusters in range(8, 33, 8):
+            for s in range(10, 50, 20):
+                inputFileName = "4.2.02.tiff"
+                outputFileName = str(blockSize) + "-" + str(numberOfClusters) + "-" + str(s)
+                # res = open("s_results.csv", "a")
+                image = imread(inputFileName)
+                (rows, columns) = getImageSize(inputFileName)
                 print str(blockSize) + "-" + str(numberOfClusters) + "-" + str(s)
                 minimumSupport = (s * rows) / 100.0
                 numberOfBlocks = (rows * columns) / (blockSize * blockSize)
@@ -569,20 +572,49 @@ def main():
                 print "Compression Done"
                 dTS = time.time()
                 Decoder()
+                print "Decoding Done"
                 runClusterDecodingInParallel()
-                decompressionTime = time.time() - dTS
+                dTE = time.time()
+                decompressionTime = dTE - dTS
                 print "Decompression Done"
-                reconstruct(rows, columns, str(blockSize) + "-" + str(numberOfClusters) + "-" + str(s))
-                ClTableSize = (3 * numberOfBlocks * (nob(numberOfClusters) + 8) * numberOfClusters) / 8000.0
+                reconstruct(rows, columns, outputFileName)
+                ClTableSize = (3 * numberOfBlocks * (
+                            nob(numberOfClusters) + 8) * numberOfClusters) / 8000.0
                 coTableSize = os.stat("redCodetable.txt").st_size + os.stat("greenCodetable.txt").st_size + os.stat(
                     "blueCodetable.txt").st_size
                 coTableSize = ((coTableSize / (6 * 1.0))) / 1000.0
                 compressedImageSize = os.stat("redCompressed.txt").st_size + os.stat(
                     "greenCompressed.txt").st_size + os.stat("blueCompressed.txt").st_size
                 compressedImageSize = ((compressedImageSize / 8 * 1.0)) / 1000.0 - 40
-
                 totalSize = ClTableSize + coTableSize + compressedImageSize
 
+                # Image Quality Measures
+
+                output = cv2.imread(outputFileName + ".bmp", 1).astype(float)
+                input = cv2.imread(inputFileName).astype(float)
+                # declare variable for each image quality measurement and assign it to zero
+                mse = 0
+                norm_cor = 0
+                max_diff = 0
+                avg_diff = 0
+                nor_abs_error = 0
+                str_con = 0
+                psnr = 0
+                for i in range(0, 3):
+                    psnr += iq.PSNR(input[i], output[i])
+                    mse += iq.mean_square_error(input[i], output[i])
+                    norm_cor += iq.normalised_cross_relation(input[i], output[i])
+                    max_diff += iq.maximal_difference(input[i], output[i])
+                    avg_diff += iq.average_difference(input[i], output[i])
+                    nor_abs_error += iq.normalised_absolute_error(input[i], output[i])
+                    str_con += iq.structural_content(input[i], output[i])
+                mse /= 3
+                norm_cor /= 3
+                max_diff /= 3
+                avg_diff /= 3
+                nor_abs_error = 3
+                str_con /= 3
+                psnr /= 3
                 ActualSize = 786.6
                 JPEGSize = 404
                 GIFSize = 226
@@ -593,17 +625,20 @@ def main():
                 CRPJPEG = ((JPEGSize - totalSize) * 100) / JPEGSize
                 CRPGIF = ((GIFSize - totalSize) * 100) / GIFSize
                 res.write(
-                    str(blockSize) + "," + str(numberOfClusters) + "," + str(s) + "," + str(clusteringTime) + "," + str(
+                    str(blockSize) + "," + str(numberOfClusters) + "," + str(s) + "," + str(
+                        clusteringTime) + "," + str(
                         mineTime) + "," + str(compressTime) + "," + str(totalCompressionTime) + "," + str(
                         decompressionTime) + "," + str(ClTableSize) + "," + str(coTableSize) + "," + str(
                         compressedImageSize) + "," + str(totalSize) + "," + str(ActualSize) + "," + str(
                         JPEGSize) + "," + str(GIFSize) + "," + str(JPEGCr) + "," + str(GIFCr) + "," + str(
-                        OurCr) + "," + str(CRPActual) + "," + str(CRPJPEG) + "," + str(CRPGIF) + "\n")
+                        OurCr) + "," + str(CRPActual) + "," + str(CRPJPEG) + "," + str(CRPGIF) + "," + str(
+                        psnr) + "," + str(mse) +
+                    "," + str(norm_cor) + "," + str(max_diff) + "," + str(avg_diff) + "," + str(nor_abs_error) + "," +
+                    str(str_con) + "\n")
                 filelist = [f for f in os.listdir(".") if f.endswith(".txt")]
                 for f in filelist:
                     os.remove(f)
-                res.close()
-
+    res.close()
 
 
 

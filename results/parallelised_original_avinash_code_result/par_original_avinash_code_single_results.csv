@@ -1,0 +1,28 @@
+par_cfsm,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,BlockSize,k,Alpha,ClusteringTime,MiningTime,EncodingTime,CompressionTime,DecompressionTime,ClusterTableSize,CodeTableSize,EncodedImageSize,CompressedSize,ActualSize,JPEG Size,GIF Size,JPEG Cr,GIF Cr,Our Cr,CRP Actual,CRP JPEG,CRP GIF,PSNR,MSE,NormalisedCrossRelation,MaxDiff,AvgDiff,NormalisedAbsoluteError,StructuralContent
+,32,8,10,6.7619819641,9.4462721348,2.3067569733,18.9734401703,124.055628061,9.216,34.3781666667,256.675,300.269166667,786.6,404,226,1.947029703,3.4805309735,2.6196495922,61.8269556742,25.6759488449,-32.8624631268,37.0581039167,1598.3333333333,0.000021163,12,0.4615885417,0.0040988383,1.0056218246
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+par_max,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,BlockSize,k,Alpha,ClusteringTime,MiningTime,EncodingTime,CompressionTime,DecompressionTime,ClusterTableSize,CodeTableSize,EncodedImageSize,CompressedSize,ActualSize,JPEG Size,GIF Size,JPEG Cr,GIF Cr,Our Cr,CRP Actual,CRP JPEG,CRP GIF,PSNR,MSE,NormalisedCrossRelation,MaxDiff,AvgDiff,NormalisedAbsoluteError,StructuralContent
+,32,8,10,6.5670809746,8.9424290657,1.378041029,17.3597648144,48.8160779476,9.216,15.3275,244.957,269.5005,786.6,404,226,1.947029703,3.4805309735,2.9187329894,65.7385583524,33.2919554455,-19.2480088496,36.9275726942,1619.3333333333,2.19091933781224E-05,12,0.4778645833,0.0040938893,1.0057726846
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+seq_cfsm,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,BlockSize,k,Alpha,ClusteringTime,MiningTime,EncodingTime,CompressionTime,DecompressionTime,ClusterTableSize,CodeTableSize,EncodedImageSize,CompressedSize,ActualSize,JPEG Size,GIF Size,JPEG Cr,GIF Cr,Our Cr,CRP Actual,CRP JPEG,CRP GIF,PSNR,MSE,NormalisedCrossRelation,MaxDiff,AvgDiff,NormalisedAbsoluteError,StructuralContent
+,32,8,10,10.6150591373,21.2202401161,4.8409588337,37.4915630817,228.276431084,9.216,34.5728333333,257.696,301.484833333,786.6,404,226,1.947029703,3.4805309735,2.6090864715,61.6724086787,25.3750412541,-33.4003687316,36.8068551157,1639,2.30733058328183E-05,12,0.5032552083,0.0041058203,1.0062553965
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+seq_max,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,BlockSize,k,Alpha,ClusteringTime,MiningTime,EncodingTime,CompressionTime,DecompressionTime,ClusterTableSize,CodeTableSize,EncodedImageSize,CompressedSize,ActualSize,JPEG Size,GIF Size,JPEG Cr,GIF Cr,Our Cr,CRP Actual,CRP JPEG,CRP GIF,PSNR,MSE,NormalisedCrossRelation,MaxDiff,AvgDiff,NormalisedAbsoluteError,StructuralContent
+,32,8,10,11.466078043,21.5702111721,4.8465440273,38.7241420746,222.848272085,9.216,34.4633333333,257.503,301.182333333,786.6,404,226,1.947029703,3.4805309735,2.6117069726,61.7108653276,25.4499174917,-33.266519174,36.6414620757,1666.3333333333,2.10435712964255E-05,12,0.458984375,0.0041078045,1.0055955638
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+new_max,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,BlockSize,k,Alpha,ClusteringTime,MiningTime,EncodingTime,CompressionTime,DecompressionTime,ClusterTableSize,CodeTableSize,EncodedImageSize,CompressedSize,ActualSize,JPEG Size,GIF Size,JPEG Cr,GIF Cr,Our Cr,CRP Actual,CRP JPEG,CRP GIF,PSNR,MSE,NormalisedCrossRelation,MaxDiff,AvgDiff,NormalisedAbsoluteError,StructuralContent
+,32,8,10,6.5423619747,8.8739738464,1.4190440178,17.276196003,0.696449995,9.216,15.4221666667,287,311.638166667,786.6,404,226,1.947029703,3.4805309735,2.5240810791,60.3816213238,22.861839934,-37.8929941003,37.7264560449,1495,0.000021939,12,0.478515625,0.0040874207,1.0058091309
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+new_cfsm,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,BlockSize,k,Alpha,ClusteringTime,MiningTime,EncodingTime,CompressionTime,DecompressionTime,ClusterTableSize,CodeTableSize,EncodedImageSize,CompressedSize,ActualSize,JPEG Size,GIF Size,JPEG Cr,GIF Cr,Our Cr,CRP Actual,CRP JPEG,CRP GIF,PSNR,MSE,NormalisedCrossRelation,MaxDiff,AvgDiff,NormalisedAbsoluteError,StructuralContent
+,32,8,10,6.4602370262,10.2114691734,2.4650969505,20.0048210621,0.6544799805,9.216,34.5846666667,281.505,325.305666667,786.6,404,226,1.947029703,3.4805309735,2.4180335008,58.6440800068,19.4787953795,-43.940560472,36.6095067859,1671.6666666667,2.40881731010147E-05,12,0.525390625,0.0037937194,1.0064264914
